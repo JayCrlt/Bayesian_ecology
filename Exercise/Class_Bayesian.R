@@ -1,4 +1,4 @@
-options(cores = parallel::detectCores())
+options(cores = parallel::detectCores()) ; library("patchwork") ; library("brms")
 
 ggplot(data = wooldridge::wine, aes(x = alcohol, y = heart)) + geom_point(size = 3, shape = 21, fill = "white", col = "black") +
   theme_minimal() +
